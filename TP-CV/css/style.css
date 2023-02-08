@@ -1,0 +1,410 @@
+/*—————————————————————————————————————————————————————————————————————*/
+/*         DÉCLARATIONS GÉNÉRALES  APPLICABLE À L'ENSEMBLE DU SITE     */
+/*—————————————————————————————————————————————————————————————————————*/
+
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+body > a:last-child
+{
+	color:  rgb(62, 106, 106);
+	font-size: 3em;
+	position: fixed;
+	z-index: 10;
+	text-shadow: 4px 4px 12px gray;
+	right: 40px;
+	bottom: 40px;
+}
+
+section
+{
+	border-bottom: solid darkslategray 1px;
+	padding: 2%;
+}
+h1
+{
+	font-size: 4em;
+	font-weight: 500;
+    text-align: center;
+}
+h2
+{
+    border: solid black 1px;
+    font-family: 'Space Mono', monospace;
+	font-size: 1.5em;
+	text-transform: uppercase;
+    background-color: rgb(62, 106, 106);
+    padding: 1%;
+    box-shadow: inset -5px -5px 10px;
+    margin-bottom: 2%;
+}
+
+/*======================== HEADER ============================*/
+
+/*—————————————— Menu de navigation —————————————————*/
+
+header
+{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+	text-align: center;
+	background-color: darkslategray;
+	padding: 1%;
+}
+
+header ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header a
+{
+	color: white;
+	text-decoration: none;
+	margin: 5%;
+	transition-duration: 1s;
+}
+
+header a:hover
+{
+	color: midnightblue;
+}
+
+/*========================= FOOTER ===========================*/
+
+footer
+{
+	background-color: darkslategray;
+	text-align: center;
+	padding: 2%;
+}
+
+footer ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a
+{
+	color: white;
+	text-decoration: none;
+	margin: 5%;
+    transition-duration: 1s;
+    line-height: 2;
+}
+
+footer a:hover
+{
+	color: midnightblue;
+}
+
+
+
+
+/*—————————————————————————————————————————————————————————————————————*/
+/*                DÉCLARATIONS POUR LA PAGE D'ACCUEIL                  */
+/*—————————————————————————————————————————————————————————————————————*/
+
+
+
+/*========================= MAIN =============================*/
+
+/*————————————— Section Presentation ————————————————*/
+
+#hero
+{
+    padding-top: 150px;
+}
+
+table
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+}
+
+
+
+
+/*————————————— Section Compétences ————————————————*/
+
+#comp ul
+{
+    list-style-type: none;
+
+}
+
+#comp li
+{
+    line-height: 2;
+}
+
+/*————————————— Section Formations ————————————————*/
+
+#form ul
+{
+    list-style-type: square;
+}
+
+#form li
+{
+    line-height: 2;
+}
+
+#form li a
+{
+    text-decoration: none;
+    color: purple;
+    transition-duration: 1s;
+}
+
+#form li a:hover
+{
+    color: rgb(0, 255, 72);
+    font-size: 1.3em;
+}
+
+/*————————————— Section Expériences ————————————————*/
+
+#exp ul
+{
+    list-style-type: circle;
+}
+
+#exp li
+{
+    line-height: 2;
+}
+
+#exp li a
+{
+    text-decoration: none;
+    color: purple;
+    transition-duration: 1s;
+}
+
+#exp li a:hover
+{
+    color: rgb(0, 238, 255);
+    font-size: 1.3em;
+
+}
+
+/*————————————— Section Centre d'intérets ————————————————*/
+
+#c-i ul
+{
+    list-style-type: none;
+}
+
+#c-i li
+{
+    line-height: 2;
+}
+
+/*————————————— Section Contact ————————————————*/
+
+.zone-form form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.zone-form input
+{
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    width: 25%;
+
+}
+
+.zone-form button
+{
+    border: none;
+    font-size: 1.5em;
+    background-color: white;
+    transition-duration: 1s;
+    align-self: flex-start;
+}
+
+.zone-form button:hover
+{
+    color: red;
+}
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/*                           REQUÈTES MEDIA                           */
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+@media screen and (max-width: 460px)
+{
+    body
+    {
+        font-size: 0.8em;
+        font-family: 'Bodoni Moda', serif;
+    }
+
+    body > a:last-child
+    {
+        color:  darkorange;
+        font-size: 1.5em;
+        right: 20px;
+	    bottom: 20px;
+    }
+
+    h1
+    {
+        font-size: 2em;
+    }
+
+    h2
+    {
+        font-size: 0.9em;
+        background-color: darkorange;
+        box-shadow: inset 5px 5px 10px;
+    }
+
+    /*—————————————— Menu de navigation —————————————————*/
+
+    header
+    {
+        background-color: darkgoldenrod;
+    }
+
+    header ul
+    {
+        justify-content: space-between;
+    }
+
+
+    header a
+    {
+        font-size: 0.8em;
+        margin: 0 0 0 -45%;
+    }
+
+    /*========================= MAIN =============================*/
+
+    /*————————————— Section Presentation ————————————————*/
+
+    #hero
+    {
+        padding-top: 50px;
+    }
+
+    table
+    {
+        font-family: 'Lobster', cursive;
+        font-size: 0.8em;
+    }
+
+    /*————————————— Section Compétences ————————————————*/
+
+    #comp ul
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #comp li
+    {
+        font-size: 0.7em;
+        flex: 1;
+    }
+
+    #comp li progress
+    {
+        flex: 1;
+        justify-content: end;
+    }
+
+    /*————————————— Section Formations ————————————————*/
+
+    #form li
+    {
+        font-size: 0.7em;
+    }
+
+    #exp li a
+    {
+        color: darkgreen;
+    }
+
+    /*————————————— Section Expériences ————————————————*/
+
+    #exp ul
+    {
+        list-style-type: circle;
+    }
+
+    #exp li
+    {
+        font-size: 0.7em;
+    }
+
+    #exp li a
+    {
+        color: darkgreen;
+    }
+
+    /*————————————— Section Centre d'intérets ————————————————*/
+
+    #c-i li
+    {
+        font-size: 0.7em;
+    }
+
+    /*————————————— Section Contact ————————————————*/
+
+
+
+    .zone-form input
+    {
+        font-size: 0.7em;
+    }
+
+    .zone-form input::placeholder
+    {
+        color: black;
+    }
+
+    .zone-form button
+    {
+        font-size: 1em;
+    }
+
+    /*========================= FOOTER ===========================*/
+
+    footer
+    {
+        background-color: darkgoldenrod;
+        border: none;
+    }
+
+    footer a
+    {
+        font-size: 0.8em;
+    }
+
+}
+
+/*----------------------------Reservoir de police---------------------------------*/
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Space Mono', monospace;
+font-family: 'Lobster', cursive;
+font-family: 'Bodoni Moda', serif;
+*/
